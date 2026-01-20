@@ -56,15 +56,29 @@ public class Quiz01 {
 		}
 		
 		System.out.println("=== 두 수 입력 받아 큰 수가 짝수 ===");
-		int a,b;
+		int a=0,b=0;
 		System.out.println("첫번째 수");
-		a = input.nextInt();
+		//a = input.nextInt();
 		System.out.println("두번째 수");
-		b = input.nextInt();
+		//b = input.nextInt();
 		if(a > b && a % 2 == 0) {
 			System.out.println("큰수이고 짝수 : "+a);
 		}else if(b > a && b % 2 == 0) {
 			System.out.println("큰수이고 짝수 : "+b);
+		}else {
+			System.out.println("해당 없음");
+		}
+		
+		System.out.println("=== 두 수 입력 받아 합이 짝수+3의 배수 ===");
+		int a1=0, b1=0;
+		int sum;
+		System.out.println("첫번째 수");
+		a1 = input.nextInt();
+		System.out.println("두번째 수");
+		b1 = input.nextInt();
+		sum = a1 + b1;
+		if(sum % 2 == 0 && sum % 3 == 0) {
+			System.out.println("합이 짝수이고 3의 배수 : "+sum);
 		}else {
 			System.out.println("해당 없음");
 		}
